@@ -1,0 +1,26 @@
+{
+  "name": "root/sipay",
+  "description": "Sipay Library For PHP",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "S\\Sipay\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "App\\": "demo/src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "secgin"
+    }
+  ],
+  "require": {
+    "secgin/api-library-base": "v2.1.x-dev",
+    "ext-openssl": "*",
+    "ext-json": "*",
+    "ext-ctype": "*"
+  }
+}
