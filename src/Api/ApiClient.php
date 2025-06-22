@@ -30,8 +30,13 @@ class ApiClient extends AbstractApiClient implements SipayApiClient
 
     protected function handle(string $requestName, $request): Result
     {
-        if ($requestName != 'getAccessToken' and
-            (!$this->tokenStorage->has('token') or $this->tokenStorage->get('token')->isExpirationPassed()))
+        if (
+            $requestName != 'getAccessToken' and
+            (
+                !$this->tokenStorage->has('token') or
+                $this->tokenStorage->get('token')->isExpirationPassed('Europe/Istanbul')
+            )
+        )
         {
             $this->refreshToken();
         }

@@ -24,7 +24,6 @@ class CheckThreeDPaymentHandler extends AbstractRequestHandler
 
         if (
             $status != $paramStatus or
-            $total != $paramAmount or
             $invoiceId != $paramInvoiceId or
             $orderId != $paramOrderId
         )
