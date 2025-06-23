@@ -17,9 +17,18 @@ namespace S\Sipay\Completion;
  * @property-read string $errorCode
  * @property-read string $error
  * @property-read string $authCode
+ * @property-read float  $merchantCommission
+ * @property-read float  $userCommission
+ * @property-read float  $merchantCommissionPercentage
+ * @property-read float $merchantCommissionFixed
  * @property-read string $installment
  * @property-read string $amount
+ * @property-read string $paymentReasonCode
+ * @property-read string $paymentReasonCodeDetail
  * @property-read string $hashKey
+ * @property-read string $mdStatus
+ * @property-read string $originalBankErrorCode
+ * @property-read string $originalBankErrorDescription
  */
 interface CheckThreeDPaymentResult
 {
